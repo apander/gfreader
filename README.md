@@ -1,1 +1,45 @@
-# gfreader
+# Brew Data Extractor
+
+This tool extracts brewing data and saves it into both JSON and CSV formats for easy analysis and review.
+
+## Dependencies
+
+The script relies on the `pyarrow` library for efficient data processing and serialization. Ensure you have Python installed on your system before proceeding.
+
+To install the necessary Python package, run the following command in your terminal:
+
+```bash
+pip install pyarrow
+```
+##Setup
+Before running the script, make sure to configure it with your credentials. Open **Extract.py** and fill in your email and password where indicated:
+```bash
+email = 'your_email_here'
+password = 'your_password_here'
+```
+
+## Running the Script
+Once the dependencies are installed, you can run the script to extract brewing data. Make sure you're in the same directory as the Extract.py script, then execute it with Python:
+
+```bash
+python Extract.py
+```
+
+## Output
+Upon successful execution, the script generates two files in the current directory:
+```bash
+brew_data.csv: Contains the extracted brewing data in CSV format.
+brew_data.json: Contains the extracted brewing data in JSON format.
+```
+
+These files can be used for further data analysis or review as needed.
+
+##Customizing Extracted Columns
+If you wish to extract more or different columns than the default, please modify the columns list in **DataProcessor.py** to include the column names you're interested in. For example:
+```bash
+columns = [
+"id", "batch_number", "session_name", "original_gravity", "final_gravity",
+"created_at", "updated_at", "fermentation_start_date", "recipe_id",
+"notes", "name", "status"
+]
+```
