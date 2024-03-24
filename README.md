@@ -4,12 +4,13 @@ This tool extracts brewing data and saves it into both JSON and CSV formats for 
 
 ## Dependencies
 
-The script relies on the `pyarrow` library for efficient data processing and serialization. Ensure you have Python installed on your system before proceeding.
+The script relies on the `pyarrow` and `pandas` libraries for data processing and serialization. Ensure you have Python installed on your system before proceeding, v3.1x recommended.
 
 To install the necessary Python package, run the following command in your terminal:
 
 ```bash
 pip install pyarrow
+pip install pandas
 ```
 ##Setup
 Before running the script, make sure to configure it with your credentials. Open **Extract.py** and fill in your email and password where indicated:

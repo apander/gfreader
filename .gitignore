@@ -1,0 +1,5 @@
+brew_data.csv
+brew_data.json
+__pycache__/Session.cpython-312.pyc
+__pycache__/DataProcessor.cpython-312.pyc
+.DS_Store

@@ -1,12 +1,13 @@
 from Session import Session
 from DataProcessor import DataProcessor
+import sys
 
 login_url = "https://community.grainfather.com/login"
 data_url = 'https://community.grainfather.com/my-brews/data'
 
-# Example usage
-email = ''
-password = ''
+# Assign login credentials
+email = sys.argv[1]
+password = sys.argv[2]
 
 session_instance = Session.new(email, password,login_url)
 
