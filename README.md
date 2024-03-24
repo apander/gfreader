@@ -12,19 +12,15 @@ To install the necessary Python package, run the following command in your termi
 pip install pyarrow
 pip install pandas
 ```
-##Setup
-Before running the script, make sure to configure it with your credentials. Open **Extract.py** and fill in your email and password where indicated:
-```bash
-email = 'your_email_here'
-password = 'your_password_here'
-```
 
 ## Running the Script
 Once the dependencies are installed, you can run the script to extract brewing data. Make sure you're in the same directory as the Extract.py script, then execute it with Python:
 
 ```bash
-python Extract.py
+python Extract.py 'username' 'password'
 ```
+
+The Grainfather username is typically an email address, remeber to escape special characters on the command line for the password.
 
 ## Output
 Upon successful execution, the script generates two files in the current directory:
