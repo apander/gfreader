@@ -20,7 +20,7 @@ Once the dependencies are installed, you can run the script to extract brewing d
 python Extract.py 'username' 'password'
 ```
 
-The Grainfather username is typically an email address, remeber to escape special characters on the command line for the password.
+The Grainfather username is typically an email address, remember to escape special characters on the command line for the password.
 
 ## Output
 Upon successful execution, the script generates two files in the current directory:
